@@ -3,14 +3,12 @@
 #### 谷歌云 虚拟机选择Debian GNU/Linux
 #### //SSR四合一键安装脚本
 
-#下载脚本
+#一键安装
 ```
-wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
+wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh && chmod +x shadowsocks-all.sh && ./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
 ```
-#文件授权
-```
-chmod +x shadowsocks-all.sh
-```
+
+
 #启动脚本：
 ```
 ./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
